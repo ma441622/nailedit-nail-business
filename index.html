@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nailed It Nail Studio | Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Nailed It</a>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero hero-bg">
+      <h1>Nailed It Nail Studio</h1>
+      <p>Nailed It is a boutique nail studio offering modern manicures, creative nail art, and a relaxing self-care
+        experience. Every set is personalized with care and style.</p>
+      <a href="contact.html" class="btn btn-primary">Book Appointment</a>
+      <a href="services.html" class="btn btn-secondary">View Services</a>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Why Choose Us?</h2>
+        <p>We bring the sparkle to your fingertips with personalized care and trendy designs.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card service-card">
+          <div class="icon">&#10024;</div>
+          <h3>Expert Artists</h3>
+          <p>Our talented nail technicians stay on top of the latest trends and techniques to give you stunning results
+            every time.</p>
+        </div>
+        <div class="card service-card">
+          <div class="icon">&#128142;</div>
+          <h3>Premium Products</h3>
+          <p>We use only high-quality, long-lasting products that are gentle on your nails and kind to the environment.
+          </p>
+        </div>
+        <div class="card service-card">
+          <div class="icon">&#128150;</div>
+          <h3>Cozy Vibes</h3>
+          <p>Relax in our aesthetic, Instagram-worthy space designed to make you feel pampered and special.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Popular Services</h2>
+        <p>Check out what our clients love the most!</p>
+      </div>
+      <div class="grid-4">
+        <div class="card service-card">
+          <div class="icon">&#128133;</div>
+          <h3>Gel Manicure</h3>
+          <p class="price">From $45</p>
+        </div>
+        <div class="card service-card">
+          <div class="icon">&#127775;</div>
+          <h3>Nail Art</h3>
+          <p class="price">From $15</p>
+        </div>
+        <div class="card service-card">
+          <div class="icon">&#128171;</div>
+          <h3>Acrylic Set</h3>
+          <p class="price">From $65</p>
+        </div>
+        <div class="card service-card">
+          <div class="icon">&#129412;</div>
+          <h3>Pedicure</h3>
+          <p class="price">From $50</p>
+        </div>
+      </div>
+      <div class="text-center mt-2">
+        <a href="services.html" class="btn btn-primary">See Full Menu</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid-2">
+        <div class="card">
+          <h2>Visit Our Studio</h2>
+          <p>Located in the heart of downtown, our studio is your escape from the everyday. Step into our world of
+            chrome, sparkles, and self-care.</p>
+          <p><strong>Address:</strong><br>123 Glitter Lane, Suite 4B<br>Orlando, FL 32218</p>
+          <p><strong>Hours:</strong><br>
+            Tue - Fri: 10am - 7pm<br>
+            Saturday: 9am - 6pm<br>
+            Sun - Mon: Closed
+          </p>
+          <a href="contact.html" class="btn btn-primary">Get Directions</a>
+        </div>
+        <div class="card text-center">
+          <h2>Follow the Sparkle</h2>
+          <p>Stay connected and see our latest creations on social media!</p>
+          <div class="social-links" style="justify-content: center;">
+            <a href="#" class="social-link" title="Instagram">&#128247;</a>
+            <a href="#" class="social-link" title="TikTok">&#127916;</a>
+            <a href="#" class="social-link" title="Pinterest">&#128204;</a>
+            <a href="#" class="social-link" title="Facebook">&#128101;</a>
+          </div>
+          <p class="mt-2"><em>@nailedit.studio</em></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">Nailed It</div>
+      <p>Your local Y2K-inspired nail haven</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="copyright">&copy; 2024 Nailed It Nail Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Nailed It Nail Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Nailed It</a>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h1>About Us</h1>
+      <p>Get to know the story behind your favorite nail studio!</p>
+    </section>
+
+    <section class="section">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="images/nailShop.jpg" alt="Image of nail Shop">
+        </div>
+        <div class="card">
+          <h2>Our Story</h2>
+          <p>Nailed It Nail Studio was born from a dream and a love for all things sparkly! Founded in 2020 by nail
+            artist extraordinaire Maya Chen, our studio started as a small passion project in her apartment.</p>
+          <p>Growing up in the early 2000s, Maya was obsessed with the Y2K aesthetic - the chrome finishes, holographic
+            everything, and that unmistakable futuristic-yet-playful vibe. When she opened Nailed It, she knew exactly
+            the atmosphere she wanted to create.</p>
+          <p>Today, we've grown into a full-service nail studio, but we've never lost that indie spirit. Every client
+            who walks through our doors becomes part of our sparkly family!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Meet the Team</h2>
+        <p>The talented artists behind your gorgeous nails!</p>
+      </div>
+      <div class="grid-3">
+        <div class="card text-center">
+          <div class="icon" style="font-size: 5rem;">
+            <img src="images/MayaChen.jpg" alt="Maya Chen Headshot">
+          </div>
+          <h3>Maya Chen</h3>
+          <p><strong>Founder & Lead Artist</strong></p>
+          <p>10+ years of experience specializing in intricate nail art and 3D designs. Maya's work has been featured in
+            multiple beauty magazines.</p>
+        </div>
+        <div class="card text-center">
+          <div class="icon" style="font-size: 5rem;">
+            <img src="images/JordanLee.jpg" alt="Jordan Lee Headshot">
+          </div>
+          <h3>Jordan Lee</h3>
+          <p><strong>Senior Nail Tech</strong></p>
+          <p>Our acrylic and gel extension expert! Jordan creates flawless sets that last for weeks. Known for her
+            chrome and ombré techniques.</p>
+        </div>
+        <div class="card text-center">
+          <div class="icon" style="font-size: 5rem;">
+            <img src="images/BellaRod.jpg" alt="Bella Rodriguez Headshot">
+          </div>
+          <h3>Bella Rodriguez</h3>
+          <p><strong>Nail Artist</strong></p>
+          <p>The queen of trendy designs! Bella keeps up with all the latest TikTok nail trends and brings fresh ideas
+            to every appointment.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Our Values</h2>
+      </div>
+      <div class="values-grid">
+        <div class="card value-item">
+          <div class="icon">&#128156;</div>
+          <h3>Self-Care First</h3>
+          <p>We believe that taking time for yourself isn't selfish - it's necessary! Your nail appointment is your
+            moment to relax and recharge.</p>
+        </div>
+        <div class="card value-item">
+          <div class="icon">&#127807;</div>
+          <h3>Clean & Safe</h3>
+          <p>Your health matters to us. We maintain the highest sanitation standards and use cruelty-free, non-toxic
+            products whenever possible.</p>
+        </div>
+        <div class="card value-item">
+          <div class="icon">&#10024;</div>
+          <h3>Express Yourself</h3>
+          <p>Your nails are a canvas for your personality! We love helping clients bring their wildest nail dreams to
+            life, no matter how unique.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card text-center">
+        <h2>Ready to Get Nailed?</h2>
+        <p>Book your appointment today and experience the Nailed It difference!</p>
+        <a href="contact.html" class="btn btn-primary">Book Now</a>
+        <a href="gallery.html" class="btn btn-secondary">See Our Work</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">Nailed It</div>
+      <p>Your local Y2K-inspired nail haven</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="copyright">&copy; 2024 Nailed It Nail Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>

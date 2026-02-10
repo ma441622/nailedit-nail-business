@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Nailed It Nail Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Nailed It</a>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h1>Contact Us</h1>
+      <p>Ready to get nailed? Reach out to book your appointment or ask any questions!</p>
+    </section>
+
+    <div class="booking-banner">
+      <img src="images/booking.jpg" alt="Elegant hands with fresh manicure holding coffee">
+      <div class="booking-banner-overlay">
+        <h2>Book Your Perfect Nails Today</h2>
+        <p>Treat yourself to a relaxing nail experience</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="contact-wrapper">
+        <div class="card">
+          <h2>Book an Appointment</h2>
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option value="manicure">Classic Manicure</option>
+                <option value="gel-mani">Gel Manicure</option>
+                <option value="acrylic">Acrylic Full Set</option>
+                <option value="gel-x">Gel-X Extensions</option>
+                <option value="pedicure">Pedicure</option>
+                <option value="nail-art">Nail Art</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="preferred-date">Preferred Date</label>
+              <input type="date" id="preferred-date" name="preferred-date">
+            </div>
+            <div class="form-group">
+              <label for="message">Message / Nail Inspo</label>
+              <textarea id="message" name="message"
+                placeholder="Tell us about your dream nails! Feel free to describe designs or mention any inspiration."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Request</button>
+          </form>
+        </div>
+
+        <div>
+          <div class="card contact-info">
+            <h2>Get In Touch</h2>
+            <div class="info-item">
+              <div class="icon">&#128205;</div>
+              <div>
+                <h4>Visit Us</h4>
+                <p>123 Glitter Lane, Suite 4B<br>Orlando, FL 32828</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon">&#128222;</div>
+              <div>
+                <h4>Call or Text</h4>
+                <p>(407) 867-5309</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon">&#128231;</div>
+              <div>
+                <h4>Email</h4>
+                <p>hello@nailedit.studio</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="icon">&#128247;</div>
+              <div>
+                <h4>Instagram</h4>
+                <p>@nailedit.studio</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mt-2">
+            <h2>Studio Hours</h2>
+            <ul class="service-list">
+              <li>
+                <span>Monday</span>
+                <span>Closed</span>
+              </li>
+              <li>
+                <span>Tuesday</span>
+                <span>10am - 7pm</span>
+              </li>
+              <li>
+                <span>Wednesday</span>
+                <span>10am - 7pm</span>
+              </li>
+              <li>
+                <span>Thursday</span>
+                <span>10am - 7pm</span>
+              </li>
+              <li>
+                <span>Friday</span>
+                <span>10am - 7pm</span>
+              </li>
+              <li>
+                <span>Saturday</span>
+                <span>9am - 6pm</span>
+              </li>
+              <li>
+                <span>Sunday</span>
+                <span>Closed</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card mt-2 text-center">
+            <h3>Follow Us!</h3>
+            <div class="social-links" style="justify-content: center;">
+              <a href="#" class="social-link" title="Instagram">&#128247;</a>
+              <a href="#" class="social-link" title="TikTok">&#127916;</a>
+              <a href="#" class="social-link" title="Pinterest">&#128204;</a>
+              <a href="#" class="social-link" title="Facebook">&#128101;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Booking Policies</h2>
+        <div class="grid-2">
+          <div>
+            <h3>&#128197; Appointments</h3>
+            <p>We recommend booking at least 1-2 weeks in advance, especially for weekends. Walk-ins are welcome based
+              on availability!</p>
+          </div>
+          <div>
+            <h3>&#128181; Deposits</h3>
+            <p>A $20 deposit is required for appointments over $75 to secure your spot. This will be applied to your
+              service total.</p>
+          </div>
+          <div>
+            <h3>&#9203; Cancellations</h3>
+            <p>Please give us at least 24 hours notice if you need to reschedule. Late cancellations may forfeit the
+              deposit.</p>
+          </div>
+          <div>
+            <h3>&#128150; First Visit?</h3>
+            <p>Please arrive 10 minutes early to fill out a quick client form. Feel free to bring nail inspo photos!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card text-center" style="background: var(--holographic);">
+        <h2 style="color: white; -webkit-text-fill-color: white;">Find Us</h2>
+        <p style="color: white;">Located in the heart of Central Florida, right next to UCF!
+        </p>
+        <div style="background: rgba(255,255,255,0.9); border-radius: 20px; padding: 2rem; margin-top: 1.5rem;">
+          <p style="font-size: 4rem;">&#128506;</p>
+          <p><strong>123 Glitter Lane, Suite 4B</strong></p>
+          <p>Free parking available in the back lot!</p>
+          <p style="margin-top: 1rem;">
+            <a href="#" class="btn btn-primary">Get Directions</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">Nailed It</div>
+      <p>Your local Y2K-inspired nail haven</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="copyright">&copy; 2024 Nailed It Nail Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>
