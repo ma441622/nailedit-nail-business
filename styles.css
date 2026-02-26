@@ -26,6 +26,39 @@
   --border-shine: 2px solid rgba(255, 255, 255, 0.6);
 }
 
+/* Dark Mode Variables */
+body.dark-mode {
+  --chrome-gradient: linear-gradient(135deg, #3a3a3a 0%, #2a2a2a 25%, #4a4a4a 50%, #1a1a1a 75%, #3a3a3a 100%);
+  --pink-chrome: linear-gradient(135deg, #cc8fa0 0%, #cc5490 25%, #cc9aa8 50%, #cc1076 75%, #cc8fa0 100%);
+  --purple-chrome: linear-gradient(135deg, #a080a0 0%, #8040a0 25%, #b0b0c8 50%, #7028a0 75%, #a080a0 100%);
+
+  --primary-pink: #ff79c4;
+  --soft-pink: #cc9aa8;
+  --lavender: #b8b8d0;
+  --silver: #606060;
+  --chrome-dark: #404040;
+  /* Note: --white intentionally NOT overridden - it's used for text on colored backgrounds */
+  --text-dark: #e8e8e8;
+
+  --shadow-chrome: 0 4px 15px rgba(0, 0, 0, 0.5), 0 2px 5px rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 0 20px rgba(255, 105, 180, 0.6);
+  --border-shine: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode {
+  background: linear-gradient(180deg, #1a1a2e 0%, #16213e 50%, #0f0f1a 100%);
+  color: var(--text-dark);
+}
+
+/* Theme Transition */
+body,
+nav,
+.card,
+.hero,
+footer {
+  transition: background 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
 /* Reset & Base */
 * {
   margin: 0;
@@ -156,6 +189,32 @@ nav {
   background: var(--primary-pink);
   border-radius: 3px;
   transition: 0.3s;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+
+.theme-toggle:hover {
+  background: var(--pink-chrome);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-2px);
+}
+
+.theme-icon {
+  font-size: 1.2rem;
+  line-height: 1;
 }
 
 /* Main Content */
@@ -644,6 +703,11 @@ footer {
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
+  }
+
+  .theme-toggle {
+    margin-left: auto;
+    margin-right: 1rem;
   }
 
   .nav-links {
